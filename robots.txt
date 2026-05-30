@@ -1,5 +1,5 @@
 # Bihar Digital Data & Network – robots.txt
-# https://bddn-dbg.github.io/bddn/
+# https://bddn.online/sitemap.xml
 
 User-agent: *
 Allow: /
@@ -28,4 +28,4 @@ User-agent: YandexBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://bddn-dbg.github.io/bddn/sitemap.xml
+Sitemap: https://bddn.online/sitemap.xml
