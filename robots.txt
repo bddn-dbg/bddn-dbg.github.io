@@ -28,4 +28,4 @@ User-agent: YandexBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://bddn.online/robots.txt
+Sitemap: https://bddn.online/sitemap.xml
