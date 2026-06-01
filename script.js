@@ -6,10 +6,21 @@
  * always execute after DOM is ready), so code runs directly for a faster start.
  */
 
+/* ─── SITE-WIDE CONFIG ─────────────────────────────────────────────────────
+ * To update the BDDN Institute URL across ALL pages, change only this one line.
+ * Every nav link and hero button pointing to the institute will update automatically.
+ * ────────────────────────────────────────────────────────────────────────── */
+const BDDN_INSTITUTE_URL = 'https://bddn.online/bddn-institute.github.io/';
+
+// Auto-update every institute link on the current page
+document.querySelectorAll('a[aria-label*="BDDN Institute"]').forEach(link => {
+  link.href = BDDN_INSTITUTE_URL;
+});
+
 /* ─── DOM REFERENCES ─── */
-const navbar      = document.getElementById('navbar');
-const mobileMenu  = document.getElementById('mobileMenu');
-const hamburger   = document.querySelector('.hamburger');
+const navbar = document.getElementById('navbar');
+const mobileMenu = document.getElementById('mobileMenu');
+const hamburger = document.querySelector('.hamburger');
 const mobileClose = document.querySelector('.mobile-close');
 const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
 const enquiryForm = document.getElementById('enquiryForm');
@@ -23,7 +34,7 @@ if (navbar) {
 
 /* ─── MOBILE MENU ACTIONS ─── */
 function openMobileMenu() {
-  if (mobileMenu)  mobileMenu.classList.add('open');
+  if (mobileMenu) mobileMenu.classList.add('open');
   if (hamburger) {
     hamburger.classList.add('active');
     hamburger.setAttribute('aria-expanded', 'true');
@@ -34,7 +45,7 @@ function openMobileMenu() {
 }
 
 function closeMobileMenu() {
-  if (mobileMenu)  mobileMenu.classList.remove('open');
+  if (mobileMenu) mobileMenu.classList.remove('open');
   if (hamburger) {
     hamburger.classList.remove('active');
     hamburger.setAttribute('aria-expanded', 'false');
@@ -118,21 +129,21 @@ if (enquiryForm) {
     if (!msg) return;
 
     // Input fields
-    const nameInput     = document.getElementById('fname');
-    const phoneInput    = document.getElementById('fphone');
-    const emailInput    = document.getElementById('femail');
+    const nameInput = document.getElementById('fname');
+    const phoneInput = document.getElementById('fphone');
+    const emailInput = document.getElementById('femail');
     const businessInput = document.getElementById('fbusiness');
-    const serviceInput  = document.getElementById('fservice');
-    const budgetInput   = document.getElementById('fbudget');
-    const messageInput  = document.getElementById('fmessage');
+    const serviceInput = document.getElementById('fservice');
+    const budgetInput = document.getElementById('fbudget');
+    const messageInput = document.getElementById('fmessage');
 
-    const name     = nameInput     ? nameInput.value.trim()     : '';
-    const phone    = phoneInput    ? phoneInput.value.trim()    : '';
-    const email    = emailInput    ? emailInput.value.trim()    : '';
-    const business = businessInput ? businessInput.value        : '';
-    const service  = serviceInput  ? serviceInput.value         : '';
-    const budget   = budgetInput   ? budgetInput.value          : '';
-    const message  = messageInput  ? messageInput.value.trim()  : '';
+    const name = nameInput ? nameInput.value.trim() : '';
+    const phone = phoneInput ? phoneInput.value.trim() : '';
+    const email = emailInput ? emailInput.value.trim() : '';
+    const business = businessInput ? businessInput.value : '';
+    const service = serviceInput ? serviceInput.value : '';
+    const budget = budgetInput ? budgetInput.value : '';
+    const message = messageInput ? messageInput.value.trim() : '';
 
     // Reset feedback messages
     msg.style.display = 'none';
@@ -170,13 +181,13 @@ if (enquiryForm) {
 
     const payload = {
       timestamp: new Date().toLocaleString('en-IN'),
-      name:      name,
-      phone:     phone,
-      email:     email,
-      business:  business,
-      service:   service,
-      budget:    budget,
-      message:   message,
+      name: name,
+      phone: phone,
+      email: email,
+      business: business,
+      service: service,
+      budget: budget,
+      message: message,
     };
 
     try {
