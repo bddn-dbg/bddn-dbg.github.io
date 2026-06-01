@@ -1,79 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bddn.online/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- About Page -->
   <url>
     <loc>https://bddn.online/about.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Contact Page -->
   <url>
     <loc>https://bddn.online/contact.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Portfolio Page -->
-  <url>
-    <loc>https://bddn.online/portfolio.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Page -->
   <url>
     <loc>https://bddn.online/blog.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
-
-  <!-- Service Page: Website Development Darbhanga -->
+  <url>
+    <loc>https://bddn.online/portfolio.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://bddn.online/website-development-darbhanga.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
   </url>
-
-  <!-- Service Page: E-Commerce Website Darbhanga -->
   <url>
     <loc>https://bddn.online/ecommerce-website-darbhanga.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Service Page: SEO Services Darbhanga -->
   <url>
     <loc>https://bddn.online/seo-services-darbhanga.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Service Page: Logo Design Darbhanga -->
   <url>
     <loc>https://bddn.online/logo-design-darbhanga.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
-
 </urlset>
