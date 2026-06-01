@@ -10,7 +10,8 @@
  * To update the BDDN Institute URL across ALL pages, change only this one line.
  * Every nav link and hero button pointing to the institute will update automatically.
  * ────────────────────────────────────────────────────────────────────────── */
-const BDDN_INSTITUTE_URL = 'https://bddn.online/bddn-institute.github.io/';
+// const BDDN_INSTITUTE_URL = 'https://bddn.online/bddn-institute.github.io/';
+const BDDN_INSTITUTE_URL = 'https://google.com';
 
 // Auto-update every institute link on the current page
 document.querySelectorAll('a[aria-label*="BDDN Institute"]').forEach(link => {
