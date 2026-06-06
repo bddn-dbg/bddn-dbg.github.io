@@ -119,7 +119,7 @@ if (sections.length && navLinksList.length) {
 }
 
 /* ─── FORM VALIDATION & GOOGLE SHEET SUBMISSION ─── */
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby1ZZ2nciqk1aEQyWouCMlaTXL_AyxqVP1MUluJ7AIooP6Opw2zAA8OU0GUW9BA-HasuQ/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxof5CSEEyyMpDF5VWiK0QRVqNgkT5kyu-GuC9U0JWXGsr7_Z8zhAuSccBy_EZdQqAuqw/exec';
 
 if (enquiryForm) {
   enquiryForm.addEventListener('submit', async function (e) {
