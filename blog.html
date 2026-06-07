@@ -28,41 +28,21 @@
   <meta name="twitter:title" content="Blog – BDDN | Website Insights for Bihar Businesses" />
   <meta name="twitter:description" content="Website development insights for Bihar businesses from BDDN Darbhanga." />
   <meta name="twitter:image" content="https://bddn.online/bddn_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://script.google.com" />
   <link rel="dns-prefetch" href="https://wa.me" />
-  <link rel="preload" href="./fonts/Nunito-Variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./fonts/Rajdhani-700.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="bddn_logo.webp" as="image" type="image/webp" fetchpriority="high" />
-  
   <link rel="preload" href="style.css" as="style" />
-  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" />
   </noscript>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    /* ── Local Fonts ── */
-    @font-face {
-      font-family: 'Nunito';
-      font-style: normal;
-      font-weight: 300 900;
-      font-display: swap;
-      src: url('./fonts/Nunito-Variable.woff2') format('woff2');
-    }
-    @font-face {
-      font-family: 'Rajdhani';
-      font-style: normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url('./fonts/Rajdhani-600.woff2') format('woff2');
-    }
-    @font-face {
-      font-family: 'Rajdhani';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url('./fonts/Rajdhani-700.woff2') format('woff2');
-    }
-
     :root {
       --navy: #0d1b3e;
       --navy2: #122257;
@@ -309,7 +289,7 @@
     }
   }
   </script>
-  <script type="module" src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
