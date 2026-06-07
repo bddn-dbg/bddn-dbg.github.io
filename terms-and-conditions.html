@@ -545,6 +545,57 @@
       margin-top: 1px;
     }
 
+    /* ── Styled Data Table ── */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid rgba(13, 27, 62, 0.08);
+      margin: 24px 0;
+      box-shadow: 0 4px 15px rgba(13, 27, 62, 0.02);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+      min-width: 600px;
+    }
+
+    .data-table th {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      color: var(--white);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+      padding: 14px 18px;
+    }
+
+    .data-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(13, 27, 62, 0.05);
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .data-table tr:nth-child(even) {
+      background: #fcfdfe;
+    }
+
+    .data-table tr:hover {
+      background: #f5f9ff;
+    }
+
+    .data-table strong {
+      color: var(--navy);
+    }
+
     /* ── Prohibited Grid ── */
     .prohibited-cards-grid {
       display: grid;
@@ -910,16 +961,56 @@
           </div>
           <p>BDDN is a professional digital agency offering the following services to businesses and individuals in India,
             primarily in Darbhanga and Bihar:</p>
-          <ul>
-            <li><span class="list-icon">✓</span><strong>Static Website Development</strong> – Clean, fast-loading professional websites (starting ₹2,999*)</li>
-            <li><span class="list-icon">✓</span><strong>Basic Landing Page</strong> – Single-page websites (starting ₹699*)</li>
-            <li><span class="list-icon">✓</span><strong>E-Commerce Website Development</strong> – Full-featured online stores with payment integration (starting ₹14,999*)</li>
-            <li><span class="list-icon">✓</span><strong>Logo Design</strong> – Professional brand logo design (included free with website packages, or available separately)</li>
-            <li><span class="list-icon">✓</span><strong>SEO Optimization</strong> – On-page SEO, schema markup, meta setup, and Google ranking improvements</li>
-            <li><span class="list-icon">✓</span><strong>Social Media Integration</strong> – Connecting websites with WhatsApp, Instagram, Facebook, and other platforms</li>
-            <li><span class="list-icon">✓</span><strong>1-Year Free Domain</strong> – Domain registration included with qualifying packages</li>
-            <li><span class="list-icon">✓</span><strong>1-Year Technical Support</strong> – Post-launch maintenance and support via WhatsApp</li>
-          </ul>
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Digital Service</th>
+                  <th>Starting Price</th>
+                  <th>Key Deliverables</th>
+                  <th>Technical Support &amp; Benefits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Basic Landing Page</strong></td>
+                  <td>₹699*</td>
+                  <td>Single-page professional layout, fully mobile-responsive, WhatsApp link integration.</td>
+                  <td>1-Year technical support via WhatsApp</td>
+                </tr>
+                <tr>
+                  <td><strong>Static Website</strong></td>
+                  <td>₹2,999*</td>
+                  <td>7–10 pages, custom design, SEO optimization, standard layout content sheets.</td>
+                  <td>1-Year WhatsApp support, Free Domain registration (1st year)</td>
+                </tr>
+                <tr>
+                  <td><strong>E-Commerce Website</strong></td>
+                  <td>₹14,999*</td>
+                  <td>Full online store catalog, cart system, UPI &amp; payment gateway integration.</td>
+                  <td>1-Year technical support, Free Domain &amp; hosting configuration</td>
+                </tr>
+                <tr>
+                  <td><strong>Logo Design</strong></td>
+                  <td>₹499* (or Free)</td>
+                  <td>Unique custom branding designs, multiple formats (PNG, JPG, SVG).</td>
+                  <td>Included free with any Website Development package</td>
+                </tr>
+                <tr>
+                  <td><strong>SEO Optimization</strong></td>
+                  <td>Custom Quote</td>
+                  <td>On-page optimization, Google Search Console setup, keywords, and metadata.</td>
+                  <td>Post-optimization delivery report and analysis</td>
+                </tr>
+                <tr>
+                  <td><strong>Social Media Integration</strong></td>
+                  <td>Included</td>
+                  <td>Connecting website contact forms, WhatsApp click-to-chat, and Instagram feeds.</td>
+                  <td>Configured as part of all standard website development plans</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p>All services are subject to project scope, requirements confirmed between BDDN and the Client, and
             availability. BDDN reserves the right to modify, discontinue, or update any service at any time.</p>
           <p style="font-size:13px;color:var(--gray);font-style:italic;">*Prices are indicative. Final pricing depends on specific
@@ -1088,21 +1179,47 @@
             <strong>Indian Rupees (INR)</strong> and are <strong>exclusive of GST</strong> unless stated otherwise.
             Domain and hosting charges are additional unless explicitly included in your package.</p>
 
-          <h3>8.2 Payment Terms</h3>
-          <ul>
-            <li><span class="list-icon">✓</span>BDDN typically requires an <strong>advance payment</strong> (percentage to be agreed) before project commencement.</li>
-            <li><span class="list-icon">✓</span>The remaining balance is due upon project completion and before final handover/deployment.</li>
-            <li><span class="list-icon">✓</span>Payment methods accepted will be communicated directly to the Client (bank transfer, UPI, etc.).</li>
-            <li><span class="list-icon">✓</span>Non-payment may result in project suspension or termination.</li>
-          </ul>
+          <h3>8.2 Payment &amp; Refund Policy Matrix</h3>
+          <p>The table below outlines our payment terms and refund policies for each stage of our digital project engagements:</p>
 
-          <h3>8.3 Refund Policy</h3>
-          <ul>
-            <li><span class="list-icon">✓</span>Advance payments are generally <strong>non-refundable</strong> once project work has commenced, as they cover time and resources already invested.</li>
-            <li><span class="list-icon">✓</span>If BDDN is unable to deliver the agreed service, a proportional refund of unused advance payment will be issued.</li>
-            <li><span class="list-icon">✓</span>Disputes regarding quality or deliverables should first be raised with BDDN for resolution within the project scope before escalation.</li>
-            <li><span class="list-icon">✓</span>No refund is applicable for dissatisfaction arising from Client-requested designs or specifications that were delivered as agreed.</li>
-          </ul>
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Project Stage / Fee Type</th>
+                  <th>Payment Terms</th>
+                  <th>Refund Eligibility</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Project Advance / Deposit</strong></td>
+                  <td>Typically 50% (or agreed percentage) due before any design or development work commences.</td>
+                  <td><strong>Non-refundable</strong> once project work has initiated, as it covers initial resource allocation.</td>
+                </tr>
+                <tr>
+                  <td><strong>Project Handover (Balance)</strong></td>
+                  <td>Remaining project balance due immediately upon completion and prior to final source code handover or domain/hosting deployment.</td>
+                  <td><strong>Non-refundable</strong> once the completed project deliverables have been accepted and deployed.</td>
+                </tr>
+                <tr>
+                  <td><strong>Domain &amp; Hosting Setup</strong></td>
+                  <td>Billed at cost (Client ownership). Assisted setup fees are included in static packages.</td>
+                  <td><strong>Non-refundable</strong> once registered, subject to third-party domain registrar and host cancellation terms.</td>
+                </tr>
+                <tr>
+                  <td><strong>Project Cancellation / Dispute</strong></td>
+                  <td>Client may terminate the project at any time via written notice. BDDN will invoice for all milestones reached.</td>
+                  <td>Proportional pro-rata refund of advance payment issued only if BDDN fails to deliver the agreed milestones.</td>
+                </tr>
+                <tr>
+                  <td><strong>Dissatisfaction / Scope Change</strong></td>
+                  <td>Changes outside the agreed scope are billed separately. Standard revision rounds are provided as per project proposal.</td>
+                  <td>No refund is applicable for subjective dissatisfaction or where deliverables conform to Client-approved layouts.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           
           <div class="premium-callout warning">
             <span class="callout-icon">💡</span>
