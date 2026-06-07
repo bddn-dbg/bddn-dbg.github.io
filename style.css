@@ -36,7 +36,7 @@ body {
   font-family: 'Nunito', sans-serif;
   color: var(--text);
   background: var(--white);
-  overflow-x: hidden;
+  /* overflow-x handled by html { overflow-x: clip } — don't set hidden on body as it breaks position:sticky */
   line-height: 1.5;
 }
 
@@ -585,7 +585,7 @@ section {
   gap: 56px;
   width: max-content;
   animation: ticker 30s linear infinite;
-  will-change: transform;
+  /* will-change removed: browser auto-promotes elements with active transform animations */
 }
 
 .ticker-item {
@@ -1261,7 +1261,7 @@ footer {
   box-shadow: 0 8px 32px rgba(37, 211, 102, .5);
   transition: transform var(--transition), box-shadow var(--transition);
   animation: float 3s ease-in-out infinite;
-  will-change: transform;
+  /* will-change removed: float keyframe already promotes to compositor layer */
 }
 
 @media (hover: hover) {
@@ -1334,6 +1334,10 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Button reset — .mobile-close is now a <button> element */
+  background: none;
+  border: none;
+  font-family: inherit;
 }
 
 /* ── EXTRACTED INLINE CLASSES ── */
@@ -1482,6 +1486,34 @@ body.no-scroll {
   color: var(--cyan);
 }
 
+/* Footer bottom legal links */
+.footer-bottom-link {
+  color: rgba(255,255,255,.5);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+@media (hover: hover) {
+  .footer-bottom-link:hover {
+    color: var(--cyan);
+  }
+}
+
+/* WhatsApp SVG icon classes (moved from inline styles) */
+.wa-svg-icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.wa-svg-btn-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
 /* ── FOCUS STYLES (Accessibility) ── */
 a:focus-visible,
 button:focus-visible,
@@ -1599,10 +1631,10 @@ textarea:focus-visible {
   }
 
   /* Safe word wrapping for narrow viewports */
-  p, h1, h2, h3, h4, h5, h6, li, a, span {
+  p, h1, h2, h3, h4, h5, h6, li, span {
     overflow-wrap: break-word;
-    word-wrap: break-word;
     word-break: break-word;
+    /* word-wrap is an alias for overflow-wrap — removed duplicate */
   }
 
   /* Reduce typography scale by ~30-40% on mobile */
@@ -1682,6 +1714,12 @@ textarea:focus-visible {
 
   .form-wrap {
     padding: 24px 16px;
+  }
+
+  /* Full-width contact CTAs on mobile to prevent overflow */
+  .contact-card-btn-wa,
+  .contact-card-btn-tel {
+    width: 100%;
   }
 }
 
