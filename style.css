@@ -398,6 +398,11 @@ nav.scrolled {
     color: var(--cyan);
     box-shadow: 0 0 20px rgba(0, 180, 216, .2);
   }
+  .btn-outline-dark:hover {
+    border-color: var(--navy);
+    color: var(--navy2);
+    box-shadow: 0 0 20px rgba(13, 27, 62, .15);
+  }
 }
 
 .btn-primary {
@@ -410,6 +415,12 @@ nav.scrolled {
   background: transparent;
   color: var(--white);
   border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid rgba(13, 27, 62, .3);
 }
 
 /* Hero Section BDDN Institute Button */
