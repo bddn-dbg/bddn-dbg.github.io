@@ -37,38 +37,60 @@
     content="Bihar's #1 digital agency. Professional websites in 7 days starting ₹699. Trusted by 100+ businesses in Darbhanga." />
   <meta name="twitter:image" content="https://bddn.online/bddn_logo.png" />
 
-  <!-- Preconnect for External Resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preconnect and Prefetch for External API Resources -->
   <link rel="preconnect" href="https://script.google.com" />
-
-  <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="https://wa.me" />
 
-  <!-- Preload Critical LCP & Render-Blocking Assets -->
+  <!-- Preload Critical Local Fonts and Above-the-Fold LCP Images -->
+  <link rel="preload" href="./fonts/Nunito-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/Rajdhani-700.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="bddn_logo.webp" as="image" type="image/webp" fetchpriority="high" />
+  
+  <!-- Asynchronous CSS Loading with Fallback -->
   <link rel="preload" href="style.css" as="style" />
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Nunito:wght@400;600;700&display=swap"
-    as="style" onload="this.onload=null;this.rel='stylesheet'" />
-
-  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
   <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Nunito:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
   </noscript>
-  <link rel="stylesheet" href="style.css" />
 
-  <!-- Minimal Critical CSS: prevents layout shift before style.css arrives -->
+  <!-- Complete Critical CSS for above-the-fold content -->
   <style>
+    /* ── Local Fonts ── */
+    @font-face {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 300 900;
+      font-display: swap;
+      src: url('./fonts/Nunito-Variable.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Rajdhani';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url('./fonts/Rajdhani-600.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Rajdhani';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('./fonts/Rajdhani-700.woff2') format('woff2');
+    }
+
     :root {
       --navy: #0d1b3e;
       --navy2: #122257;
+      --blue: #1a4da2;
       --cyan: #00b4d8;
       --teal: #00c9b1;
       --gold: #f0a500;
       --white: #ffffff;
-      --text: #1a2342
+      --light: #f0f6ff;
+      --gray: #6b7a9b;
+      --text: #1a2342;
+      --radius: 16px;
+      --transition: 0.35s cubic-bezier(.4, 0, .2, 1);
     }
 
     *,
@@ -79,46 +101,442 @@
       padding: 0
     }
 
-    body {
-      background: var(--white);
-      overflow-x: hidden
+    html {
+      -webkit-text-size-adjust: 100%;
+      overflow-x: clip;
     }
 
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: .02em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: var(--cyan);
+      color: var(--navy);
+      padding: 8px 16px;
+      border-radius: 0 0 8px 8px;
+      font-weight: 700;
+      font-size: 14px;
+      z-index: 9999;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Navbar */
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5vw;
       height: 72px;
-      background: rgba(13, 27, 62, .95)
-    }
-
-    #home {
-      min-height: 100vh;
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 50%, #0a2a5e 100%);
-      padding-top: 72px
+      background: rgba(13, 27, 62, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0, 180, 216, 0.18);
+      transition: var(--transition);
     }
 
     .nav-logo {
       display: flex;
       align-items: center;
       gap: 12px;
-      text-decoration: none
+      text-decoration: none;
     }
 
     .nav-logo-img {
       height: 50px;
       width: 50px;
       object-fit: contain;
-      border-radius: 8px
+      border-radius: 8px;
+    }
+
+    .nav-logo-title {
+      margin: 0;
+      font-size: 20px;
+      color: #eeeef3;
+      font-weight: bold;
+    }
+
+    .nav-logo-subtitle {
+      color: #ecbe17;
+      font-size: 12px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, .75);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      transition: color var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--cyan);
+      transition: width var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      background: linear-gradient(90deg, var(--cyan), var(--teal));
+      color: var(--navy) !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 700 !important;
+      transition: transform var(--transition), box-shadow var(--transition) !important;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 201, 177, .4);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .nav-institute-cta {
+      background: linear-gradient(90deg, var(--gold), #ff8c00);
+      color: var(--navy) !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 700 !important;
+      transition: transform var(--transition), box-shadow var(--transition) !important;
+    }
+
+    .nav-institute-cta:hover {
+      transform: translateY(-2px) scale(1.03) !important;
+      box-shadow: 0 6px 20px rgba(240, 165, 0, 0.4);
+    }
+
+    .nav-institute-cta::after {
+      display: none !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      width: 48px;
+      height: 48px;
+      padding: 10px;
+      background: var(--navy2);
+      border: 1px solid rgba(0, 180, 216, 0.25);
+      border-radius: 8px;
+      transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* Hero */
+    #home {
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 50%, #0a2a5e 100%);
+      padding-top: 72px;
+    }
+
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-image:
+        linear-gradient(rgba(0, 180, 216, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 180, 216, 0.06) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s 2s linear infinite;
+      will-change: transform;
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .orb-1 {
+      width: 500px;
+      height: 500px;
+      background: rgba(0, 180, 216, 0.18);
+      top: -100px;
+      right: -100px;
+    }
+
+    .orb-2 {
+      width: 350px;
+      height: 350px;
+      background: rgba(0, 201, 177, 0.12);
+      bottom: -80px;
+      left: 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 5vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 180, 216, 0.12);
+      border: 1px solid rgba(0, 180, 216, 0.3);
+      color: var(--cyan);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      margin-bottom: 24px;
+      animation: fadeUp .8s ease both;
+    }
+
+    .hero-badge::before {
+      content: '●';
+      font-size: 8px;
+      animation: pulse 2s infinite;
     }
 
     .hero-title {
       font-size: clamp(38px, 5vw, 64px);
       font-weight: 700;
       line-height: 1.1;
-      color: var(--white)
+      color: var(--white);
+      margin-bottom: 16px;
+      animation: fadeUp .9s .1s ease both;
+    }
+
+    .hero-title .accent {
+      color: var(--cyan);
+    }
+
+    .hero-title .gold {
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      color: rgba(255, 255, 255, .65);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      animation: fadeUp 1s .2s ease both;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeUp 1s .3s ease both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 28px;
+      min-height: 48px;
+      border-radius: 10px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--cyan), var(--teal));
+      color: var(--navy);
+      box-shadow: 0 8px 32px rgba(0, 180, 216, .3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, .3);
+    }
+
+    .btn-institute {
+      background: linear-gradient(135deg, var(--gold) 0%, #ff8c00 100%);
+      color: var(--navy);
+      box-shadow: 0 8px 32px rgba(240, 165, 0, 0.35);
+      border: none;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 40px;
+      animation: fadeUp 1s .4s ease both;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .hero-stat span {
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeUp 1s .2s ease both;
+    }
+
+    .hero-card-wrap {
+      position: relative;
+      width: 380px;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 180, 216, 0.25);
+      animation: spin linear infinite;
+      will-change: transform;
+    }
+
+    .ring-1 {
+      width: 340px;
+      height: 340px;
+      animation-duration: 30s;
+    }
+
+    .ring-2 {
+      width: 280px;
+      height: 280px;
+      animation-duration: 20s;
+      border-style: dashed;
+    }
+
+    .hero-logo-box {
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 180, 216, 0.2);
+      border-radius: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 20px 80px rgba(0, 0, 0, .3), inset 0 0 40px rgba(0, 180, 216, .05);
+    }
+
+    @keyframes gridMove {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(50px, 50px, 0); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .3; }
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 
@@ -212,7 +630,7 @@
   </script>
 
   <!-- Deferred JavaScript -->
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -759,7 +1177,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 <span>Bihar Digital Data and Network (BDDN)</span>. All Rights Reserved. | <a href="privacy-policy.html" style="color:rgba(255,255,255,.5);">Privacy Policy</a> | <a href="terms-and-conditions.html" style="color:rgba(255,255,255,.5);">Terms &amp; Conditions</a></span>
+      <span>© 2026 <span>Bihar Digital Data and Network (BDDN)</span>. All Rights Reserved. | <a
+          href="privacy-policy.html" style="color:rgba(255,255,255,.5);">Privacy Policy</a> | <a
+          href="terms-and-conditions.html" style="color:rgba(255,255,255,.5);">Terms &amp; Conditions</a></span>
       <span class="footer-love-text">Made with ❤️ in Bihar | <span class="footer-love-brand">Learn Digital, Build
           Future</span></span>
     </div>
