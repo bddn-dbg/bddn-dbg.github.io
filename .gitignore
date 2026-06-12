@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# OS metadata
+.DS_Store
+
+# Local env files
+.env
+.env.*
+.local

@@ -232,3 +232,67 @@ function showSuccess(msgEl, text) {
   msgEl.textContent = text;
 }
 
+/* ─── SIDEBAR ACTIVE LINK OBSERVER (LEGAL PAGES) ─── */
+const legalSections = document.querySelectorAll('.legal-card');
+const tocItems = document.querySelectorAll('.toc-item');
+const tocCard = document.querySelector('.toc-card');
+const tocTitle = document.getElementById('toc-toggle-btn');
+
+if (tocTitle && tocCard) {
+  tocTitle.addEventListener('click', () => {
+    if (window.innerWidth < 992) {
+      tocCard.classList.toggle('open');
+    }
+  });
+}
+
+const tocLinks = document.querySelectorAll('.toc-item a');
+tocLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth < 992 && tocCard) {
+      tocCard.classList.remove('open');
+    }
+  });
+});
+
+if (legalSections.length && tocItems.length) {
+  const legalObserverOptions = {
+    root: null,
+    rootMargin: '-20% 0px -60% 0px',
+    threshold: 0
+  };
+
+  const legalObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const activeId = entry.target.getAttribute('id');
+        tocItems.forEach(item => {
+          const link = item.querySelector('a');
+          if (link && link.getAttribute('href') === `#${activeId}`) {
+            item.classList.add('active');
+            if (window.innerWidth >= 992) {
+              const sidebar = document.querySelector('.legal-sidebar');
+              if (sidebar) {
+                const sidebarRect = sidebar.getBoundingClientRect();
+                const itemRect = item.getBoundingClientRect();
+                if (itemRect.top < sidebarRect.top || itemRect.bottom > sidebarRect.bottom) {
+                  const relativeTop = itemRect.top - sidebarRect.top + sidebar.scrollTop;
+                  sidebar.scrollTo({
+                    top: relativeTop - sidebar.clientHeight / 2 + itemRect.height / 2,
+                    behavior: 'smooth'
+                  });
+                }
+              }
+            }
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, legalObserverOptions);
+
+  legalSections.forEach(section => legalObserver.observe(section));
+}
+
+

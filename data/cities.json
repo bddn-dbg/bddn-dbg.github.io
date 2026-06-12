@@ -1,0 +1,704 @@
+[
+  {
+    "name": "Patna",
+    "slug": "patna",
+    "lat": 25.5941,
+    "lng": 85.1376,
+    "postalCode": "800001",
+    "introduction": "As Bihar's capital and a rapidly growing economic hub, Patna is experiencing a massive wave of digital transformation. Local businesses—from IT startups in Boring Road to retail stores in Patna Market and educational coaching institutes in Kankarbagh—need a professional online presence to stand out and reach their audience. BDDN provides affordable, fast, and secure website development services in Patna, Bihar, custom-tailored to help you grow.",
+    "useCases": [
+      {
+        "icon": "🎓",
+        "title": "Patna Coaching Institutes",
+        "desc": "Coaching institutes in Boring Road, Kankarbagh, and across Patna need websites for student registration, class schedules, and online enquiries."
+      },
+      {
+        "icon": "🛍️",
+        "title": "Retail & E-commerce Shops",
+        "desc": "Local retail brands and distributors in Patna Market, Hathwa Market, and Bailey Road can launch online stores with BDDN's payment-enabled websites."
+      },
+      {
+        "icon": "🏥",
+        "title": "Clinics & Hospitals",
+        "desc": "Doctors and medical centers in Patna need clean, professional sites to manage patient bookings, list services, and share contact details."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much does a website cost in Patna?",
+        "a": "BDDN offers highly affordable website packages starting at ₹699 for a basic single-page landing page, ₹2,999 for a professional multi-page static site, and ₹14,999 for a complete, payment-integrated e-commerce store."
+      },
+      {
+        "q": "Can BDDN help my Patna business rank on Google?",
+        "a": "Yes! Every website we build in Patna follows SEO best practices, including structured schema markup, clean meta tags, and high-performance loading speeds, giving your site a competitive edge on local Google searches."
+      },
+      {
+        "q": "How long does it take to deliver a website in Patna?",
+        "a": "Our standard delivery time is just 7 days from the receipt of content and booking confirmation. Larger projects like e-commerce portals may take 10-15 days."
+      }
+    ]
+  },
+  {
+    "name": "Darbhanga",
+    "slug": "darbhanga",
+    "lat": 26.1542,
+    "lng": 85.8918,
+    "postalCode": "846001",
+    "introduction": "Darbhanga, the cultural heart of Mithila, is home to a growing community of entrepreneurs, medical clinics near Laheriasarai, Mithila painting artisans, and educational coachings. A professional website from BDDN helps you reach clients beyond geographical boundaries while maintaining your local trust. We offer specialized website development in Darbhanga tailored to the region's unique commerce and educational ecosystem.",
+    "useCases": [
+      {
+        "icon": "🎨",
+        "title": "Mithila Art & Craft Portfolios",
+        "desc": "Showcase and sell traditional Madhubani and Mithila paintings globally with responsive portfolio and e-commerce websites."
+      },
+      {
+        "icon": "🏥",
+        "title": "Medical Clinics & Doctors",
+        "desc": "Clinics around Laheriasarai and GMCH area can enable online appointment booking and provide patient information pages."
+      },
+      {
+        "icon": "📚",
+        "title": "Schools & Educational Academies",
+        "desc": "Establish authority and streamline admissions for schools and coaching institutions in Darbhanga with custom portals."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the cost of website development in Darbhanga?",
+        "a": "Our packages in Darbhanga start at ₹699 for landing pages, ₹2,999 for full static business websites, and ₹14,999 for custom e-commerce stores."
+      },
+      {
+        "q": "Do you provide local support in Darbhanga?",
+        "a": "Yes, BDDN is headquartered in Darbhanga, meaning you get direct local support, quick face-to-face consultations if needed, and dedicated technical help."
+      },
+      {
+        "q": "Will my Darbhanga business website work on mobile devices?",
+        "a": "Absolutely! 100% of our sites are mobile responsive and optimized to load lightning-fast on mobile internet connections across Bihar."
+      }
+    ]
+  },
+  {
+    "name": "Begusarai",
+    "slug": "begusarai",
+    "lat": 25.4182,
+    "lng": 86.1287,
+    "postalCode": "851101",
+    "introduction": "Begusarai, the industrial district of Bihar, hosts numerous manufacturing units, retailers, clinics, and schools. To stand out in Bihar's industrial hub, businesses need high-performance websites. BDDN is your trusted partner for professional website development in Begusarai, offering clean layouts that build corporate credibility and generate local sales.",
+    "useCases": [
+      {
+        "icon": "🏭",
+        "title": "Industrial Manufacturers & Suppliers",
+        "desc": "Showcase industrial capacity, product specifications, and enable quotation requests for Begusarai's manufacturing and trading units."
+      },
+      {
+        "icon": "🚜",
+        "title": "Agri-Traders & Distributors",
+        "desc": "Connect with local farmers and regional buyers by showcasing agricultural tools, fertilizers, and logistics services online."
+      },
+      {
+        "icon": "🏢",
+        "title": "Local Businesses & Stores",
+        "desc": "Help retail stores and clinics in Begusarai City find local customers searching on Google Maps and Google Search."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why does my Begusarai business need a professional website?",
+        "a": "A website establishes digital credibility for industrial and trade businesses in Begusarai, making it easier to acquire regional B2B contracts and local customers."
+      },
+      {
+        "q": "What is the starting price for a website in Begusarai?",
+        "a": "Our entry-level landing page starts at just ₹699. Multi-page corporate static sites cost ₹2,999, and full e-commerce stores are priced at ₹14,999."
+      },
+      {
+        "q": "Will you help list our Begusarai business on Google Maps?",
+        "a": "Yes! All website packages include guidance and baseline optimization for your Google Business Profile to attract local search traffic."
+      }
+    ]
+  },
+  {
+    "name": "Muzaffarpur",
+    "slug": "muzaffarpur",
+    "lat": 26.1209,
+    "lng": 85.3647,
+    "postalCode": "842001",
+    "introduction": "Muzaffarpur, the commercial capital of North Bihar, is famous for its litchis and bustling trade. Local wholesale distributors, clinics, schools, and restaurants in Muzaffarpur need modern websites to capture local search traffic. BDDN offers premium website development in Muzaffarpur to transform traditional merchants into digital leaders.",
+    "useCases": [
+      {
+        "icon": "📦",
+        "title": "Wholesalers & Litchi Distributors",
+        "desc": "Establish a professional online presence to manage bulk orders, list product catalogs, and attract national trade partners."
+      },
+      {
+        "icon": "🏥",
+        "title": "Clinics & Diagnostic Labs",
+        "desc": "Help patients in Muzaffarpur book test appointments online and download health reports easily from your clinic's portal."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Restaurants & Sweet Shops",
+        "desc": "Showcase menus, display customer reviews, and accept table reservations or online orders directly on your website."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can website development help my Muzaffarpur trade business?",
+        "a": "A website helps wholesale merchants and distributors in Muzaffarpur find partners outside Bihar and manage orders efficiently online."
+      },
+      {
+        "q": "Do you offer e-commerce website development in Muzaffarpur?",
+        "a": "Yes, we build comprehensive e-commerce stores starting at ₹14,999 with payment gateway integration, product catalogs, and order management."
+      },
+      {
+        "q": "What support do you provide after the website goes live?",
+        "a": "We provide 1 year of free technical support via WhatsApp to ensure your website runs smoothly and is updated when needed."
+      }
+    ]
+  },
+  {
+    "name": "Bhagalpur",
+    "slug": "bhagalpur",
+    "lat": 25.2425,
+    "lng": 86.9842,
+    "postalCode": "812001",
+    "introduction": "Bhagalpur, the Silk City of Bihar, has a rich heritage of handloom, trade, and education. Local weavers, retailers, coaching academies, and clinics in Bhagalpur can expand their reach with an e-commerce or static website. BDDN delivers optimized website design in Bhagalpur to bring the Silk City's unique commerce to the global stage.",
+    "useCases": [
+      {
+        "icon": "🧶",
+        "title": "Bhagalpuri Silk E-Commerce",
+        "desc": "Sell famous Bhagalpuri silk sarees, dress materials, and handloom crafts directly to customers worldwide with an online store."
+      },
+      {
+        "icon": "🎓",
+        "title": "Educational & Coaching Portals",
+        "desc": "Attract students from surrounding districts by listing courses, sharing video lectures, and accepting online admissions."
+      },
+      {
+        "icon": "🏥",
+        "title": "Hospitals & Specialized Clinics",
+        "desc": "Provide digital health portals where patients can check doctor availability, review services, and find contact info."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can BDDN create an online store for my Bhagalpuri Silk shop?",
+        "a": "Yes! We specialize in building secure, high-speed e-commerce stores with payment gateways (UPIs, cards) starting at ₹14,999."
+      },
+      {
+        "q": "What is the cost of a static website in Bhagalpur?",
+        "a": "A multi-page static business website in Bhagalpur is priced at just ₹2,999, which includes a free domain name in the first year."
+      },
+      {
+        "q": "Will my site rank on Google for Bhagalpur local searches?",
+        "a": "Yes, we include on-page local SEO structures (schema, meta tags, clean hierarchy) to help your site gain visibility on Google."
+      }
+    ]
+  },
+  {
+    "name": "Gaya",
+    "slug": "gaya",
+    "lat": 24.7955,
+    "lng": 84.9994,
+    "postalCode": "823001",
+    "introduction": "Gaya, a major spiritual and tourism center, hosts thousands of hotels, travel agencies, local shops, and clinics. A professional website from BDDN helps Gaya businesses connect with national and international visitors. We specialize in tourism-focused website development in Gaya to build booking-friendly online portals.",
+    "useCases": [
+      {
+        "icon": "🏨",
+        "title": "Hotels & Guest Houses",
+        "desc": "Showcase rooms, list amenities, integrate Google Maps, and allow domestic and international tourists to send booking enquiries."
+      },
+      {
+        "icon": "✈️",
+        "title": "Travel & Tour Operators",
+        "desc": "Promote holiday packages, Bodh Gaya pilgrimage tours, and taxi booking services with interactive booking forms."
+      },
+      {
+        "icon": "🛍️",
+        "title": "Gaya Handicraft Stores",
+        "desc": "Sell stone sculptures, brass items, and religious souvenirs online to devotees and art lovers worldwide."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you design booking websites for hotels in Gaya?",
+        "a": "Yes, we design booking-friendly sites for guest houses and hotels in Gaya and Bodh Gaya to streamline tourist bookings."
+      },
+      {
+        "q": "What is the cost of website maker services in Gaya?",
+        "a": "Landing pages start at ₹699, multi-page business websites at ₹2,999, and comprehensive booking/e-commerce sites at ₹14,999."
+      },
+      {
+        "q": "Can you design multilingual websites for Gaya tourism?",
+        "a": "Yes, we can build custom multilingual websites to cater to international tourists visiting Bodh Gaya. Contact us for a custom quote."
+      }
+    ]
+  },
+  {
+    "name": "Samastipur",
+    "slug": "samastipur",
+    "lat": 25.8638,
+    "lng": 85.7810,
+    "postalCode": "848101",
+    "introduction": "Samastipur, a vital agricultural trading hub and railway division, relies heavily on logistics, trade, and retail. Establish your digital trust with a fast-loading business website. BDDN provides reliable website development in Samastipur, custom-designed to help local traders, transport companies, and clinics grow.",
+    "useCases": [
+      {
+        "icon": "🚛",
+        "title": "Logistics & Transport Agencies",
+        "desc": "List your route networks, fleet capacity, and allow corporate clients to request freight quotes online."
+      },
+      {
+        "icon": "🌾",
+        "title": "Agricultural Cold Storages & Wholesale",
+        "desc": "Publish storage capacities, market prices, and help wholesale buyers locate and contact your facility."
+      },
+      {
+        "icon": "🏫",
+        "title": "Schools & Intermediate Colleges",
+        "desc": "Provide a reliable portal for student notices, curriculum, fee details, and online admissions."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why does my Samastipur logistics business need a website?",
+        "a": "A professional website increases your corporate appeal, enabling you to attract larger business contracts and ease cargo booking queries."
+      },
+      {
+        "q": "How can I start a school website in Samastipur?",
+        "a": "Choose our ₹2,999 Static Website package. We will set up your school profile, gallery, admission page, and contact info in 7 days."
+      },
+      {
+        "q": "Are there monthly charges for BDDN websites in Samastipur?",
+        "a": "No, we do not charge monthly fees. You pay the setup cost, and hosting/domain is renewed annually starting from the second year."
+      }
+    ]
+  },
+  {
+    "name": "Madhubani",
+    "slug": "madhubani",
+    "lat": 26.3486,
+    "lng": 86.0792,
+    "postalCode": "847211",
+    "introduction": "Madhubani is globally renowned for its unique art form, Mithila paintings. Local artists, NGOs, clinics, and educational schools in Madhubani require customized web setups to digitalize their reach. BDDN offers specialized website development in Madhubani to help local painters and businesses transition to online success.",
+    "useCases": [
+      {
+        "icon": "🖼️",
+        "title": "Mithila Painting Artists & Collectives",
+        "desc": "Sell traditional Madhubani artworks directly to collectors globally via an e-commerce website with local payment integrations."
+      },
+      {
+        "icon": "🤝",
+        "title": "NGOs & Social Organizations",
+        "desc": "Showcase your local social projects, accept volunteer registrations, and receive donations online securely."
+      },
+      {
+        "icon": "🏫",
+        "title": "Schools & Local Colleges",
+        "desc": "Provide a digital platform for announcements, student galleries, contact details, and admission forms."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can Madhubani artists sell paintings online?",
+        "a": "We construct secure e-commerce portals starting at ₹14,999 with payment systems so you can showcase and sell your Mithila art worldwide."
+      },
+      {
+        "q": "What is the delivery time for a website in Madhubani?",
+        "a": "Our standard business websites are ready to launch in just 7 days after receiving the text and images from you."
+      },
+      {
+        "q": "Do you provide hosting for Madhubani sites?",
+        "a": "Yes! Every multi-page static package includes domain registration and hosting options, renewed annually."
+      }
+    ]
+  },
+  {
+    "name": "Saharsa",
+    "slug": "saharsa",
+    "lat": 25.8835,
+    "lng": 86.6006,
+    "postalCode": "852201",
+    "introduction": "Saharsa, the urban hub of the Kosi division, is rapidly developing its commerce, healthcare, and education. Local retail brands, private schools, clinics, and agricultural distributors need modern web portals to capture local client interest. BDDN delivers affordable website development in Saharsa to help local businesses establish online presence.",
+    "useCases": [
+      {
+        "icon": "🛍️",
+        "title": "Retail Shops & Stores",
+        "desc": "Showcase local products, accept WhatsApp orders, and announce discounts to customers across Saharsa."
+      },
+      {
+        "icon": "🏥",
+        "title": "Private Clinics & Labs",
+        "desc": "Help Saharsa patients locate your diagnostic center, view test packages, and book appointment slots online."
+      },
+      {
+        "icon": "🚜",
+        "title": "Agri-Dealers & Warehouses",
+        "desc": "List seeds, fertilizers, and modern farm equipment to connect with buyers and farmers in the Kosi region."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can a clinic in Saharsa benefit from a website?",
+        "a": "A clinic website helps patients from surrounding villages find your location, check doctor timings, and contact your reception easily."
+      },
+      {
+        "q": "What is the cost of website designer services in Saharsa?",
+        "a": "Landing pages start at ₹699, full business websites cost ₹2,999, and full e-commerce stores are priced at ₹14,999."
+      },
+      {
+        "q": "Do you offer support if we don't know how to manage the site in Saharsa?",
+        "a": "Yes, BDDN provides 1 year of free support via WhatsApp. We will help you update text, change numbers, or resolve issues."
+      }
+    ]
+  },
+  {
+    "name": "Purnia",
+    "slug": "purnia",
+    "lat": 25.7771,
+    "lng": 87.4753,
+    "postalCode": "854301",
+    "introduction": "Purnia, a major commercial, educational, and medical hub of Seemanchal, sees a large daily inflow of traders and patients. Having a fast, professional website is critical to tap into this regional market. BDDN provides expert website development in Purnia, tailored for logistics firms, healthcare clinics, wholesale traders, and schools.",
+    "useCases": [
+      {
+        "icon": "🏥",
+        "title": "Medical Diagnostic Centers & Clinics",
+        "desc": "Allow regional patients in Seemanchal to book health checkups, see doctor profiles, and find emergency numbers."
+      },
+      {
+        "icon": "🌾",
+        "title": "Grain Merchants & Cold Storage",
+        "desc": "Showcase bulk capacity, deal portfolios, and facilitate wholesale trading enquiries from out-of-state buyers."
+      },
+      {
+        "icon": "🚛",
+        "title": "Transport & Freight Logisticians",
+        "desc": "Create a professional interface listing route coverages, tracking numbers, and freight quote options."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why is BDDN the preferred website developer in Purnia?",
+        "a": "We build fast, affordable, and mobile-friendly websites with specialized on-page local SEO structures to target the Seemanchal market."
+      },
+      {
+        "q": "How much does a multi-page website cost in Purnia?",
+        "a": "A professional 7-10 page static website costs ₹2,999, which includes a free domain name for the first year."
+      },
+      {
+        "q": "Can you integrate WhatsApp order forms for Purnia merchants?",
+        "a": "Yes, we can add quick WhatsApp integration on all sites so customers can easily send order inquiries directly to your phone."
+      }
+    ]
+  },
+  {
+    "name": "Arrah",
+    "slug": "arrah",
+    "lat": 25.5583,
+    "lng": 84.6681,
+    "postalCode": "802301",
+    "introduction": "Arrah, the historic headquarters of Bhojpur district, has a massive student population and thriving local trade. Educational coaching academies, colleges, clinics, and retail stores in Arrah need professional websites to attract local visitors and student enrollments. BDDN offers custom website development in Arrah to boost your regional visibility.",
+    "useCases": [
+      {
+        "icon": "🎓",
+        "title": "Coaching & Competitive Academies",
+        "desc": "Publish exam notifications, class updates, results, and accept online course registration requests in Arrah."
+      },
+      {
+        "icon": "🏥",
+        "title": "Clinics & Pathology Labs",
+        "desc": "Help patients in Bhojpur find your clinic location, view doctor availability, and download health tips."
+      },
+      {
+        "icon": "🛍️",
+        "title": "Local Retail Stores & Showrooms",
+        "desc": "Showcase garments, electronics, or hardware products online and generate local walk-in inquiries."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can a coaching institute in Arrah use a website?",
+        "a": "A website provides a centralized board for notifications, mock test links, study material downloads, and attracts student registrations."
+      },
+      {
+        "q": "What is the cost of website development in Arrah?",
+        "a": "Our packages start at ₹699 for single-page templates, ₹2,999 for static company websites, and ₹14,999 for transactional e-commerce."
+      },
+      {
+        "q": "Is a domain name included in your Arrah packages?",
+        "a": "Yes! Our ₹2,999 and ₹14,999 plans include a free domain registration for the first year."
+      }
+    ]
+  },
+  {
+    "name": "Bihar Sharif",
+    "slug": "bihar-sharif",
+    "lat": 25.1966,
+    "lng": 85.5174,
+    "postalCode": "803101",
+    "introduction": "Bihar Sharif, the administrative heart of Nalanda district, is a major agricultural hub, especially famous for potato trading, alongside private schools and medical clinics. A high-performance website helps you reach buyers across India. BDDN delivers professional website development in Bihar Sharif, designed to digitize local trade and services.",
+    "useCases": [
+      {
+        "icon": "🌾",
+        "title": "Potato Traders & Cold Storage",
+        "desc": "Publish agricultural storage capacity, daily mandi rates, and accept bulk business-to-business (B2B) inquiries."
+      },
+      {
+        "icon": "🏫",
+        "title": "Private Schools & Academies",
+        "desc": "Provide admission announcements, notice boards, contact detail forms, and galleries for parents."
+      },
+      {
+        "icon": "🏥",
+        "title": "Hospitals & Orthopedic Clinics",
+        "desc": "Allow patients in Nalanda to book medical slots, learn about treatments, and contact your desk."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why does my Bihar Sharif trading business need a website?",
+        "a": "A website helps cold storage owners and commodity traders in Bihar Sharif show their credibility to national agricultural buyers."
+      },
+      {
+        "q": "What is the price of school website development in Bihar Sharif?",
+        "a": "We build standard school websites for ₹2,999. This covers notice boards, contact forms, and a responsive photo gallery."
+      },
+      {
+        "q": "Do you handle website maintenance in Bihar Sharif?",
+        "a": "Yes, we provide 1 year of free tech support via WhatsApp to take care of minor updates and ensure technical stability."
+      }
+    ]
+  },
+  {
+    "name": "Munger",
+    "slug": "munger",
+    "lat": 25.3748,
+    "lng": 86.4735,
+    "postalCode": "811201",
+    "introduction": "Munger, famous for its historic fort, yoga university, and manufacturing heritage, is home to diverse small industries, clinics, and educational schools. Bring your business online to expand your credibility. BDDN provides reliable website development in Munger to help local manufacturers, travel agencies, and clinics build clean web portals.",
+    "useCases": [
+      {
+        "icon": "🏭",
+        "title": "Small-Scale Manufacturers & Workshops",
+        "desc": "Showcase machinery details, structural parts, manufacturing capacities, and solicit corporate deals."
+      },
+      {
+        "icon": "🧘",
+        "title": "Yoga Centers & Retreats",
+        "desc": "Share course info, accommodation options, daily schedules, and register international and national yoga practitioners."
+      },
+      {
+        "icon": "🏫",
+        "title": "Private Schools & Institutes",
+        "desc": "Publish school notices, admit cards, contact details, and student achievement galleries online."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the starting price for a website in Munger?",
+        "a": "A landing page is priced at ₹699, a multi-page static site at ₹2,999, and a fully featured online store at ₹14,999."
+      },
+      {
+        "q": "Will you help rank our Munger business on Google?",
+        "a": "Yes! All website projects include basic local SEO setups (on-page optimization and schema tags) to help you get found locally."
+      },
+      {
+        "q": "How can I contact support from Munger?",
+        "a": "You can reach out directly to our support desk via WhatsApp at any time for quick assistance and updates."
+      }
+    ]
+  },
+  {
+    "name": "Motihari",
+    "slug": "motihari",
+    "lat": 26.6521,
+    "lng": 84.9126,
+    "postalCode": "845401",
+    "introduction": "Motihari, the district headquarters of East Champaran, is a center for education, retail trade, and brick manufacturing. Local colleges, wholesale traders, clinics, and showrooms in Motihari can capture significant regional interest with a website. BDDN offers high-quality website development in Motihari, designed to help Champaran businesses scale.",
+    "useCases": [
+      {
+        "icon": "🧱",
+        "title": "Brick Kilns & Material Suppliers",
+        "desc": "Showcase supply capacities, brick types, transport options, and generate wholesale construction inquiries."
+      },
+      {
+        "icon": "🎓",
+        "title": "Colleges & Private Coaching Classes",
+        "desc": "Enable student admission applications, list subjects, publish test routines, and contact details."
+      },
+      {
+        "icon": "🏥",
+        "title": "Surgical Clinics & Nursing Homes",
+        "desc": "Manage patient inquiries, list specialist doctors, and provide emergency contact coordinates."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How long does it take to build a website in Motihari?",
+        "a": "We deliver fully functional static websites in just 7 days from receiving your files and confirming the booking."
+      },
+      {
+        "q": "What does a business website cost in Motihari?",
+        "a": "Our business static site plan is priced at ₹2,999. Landing pages start at ₹699, and online retail stores at ₹14,999."
+      },
+      {
+        "q": "Do we get a free logo with website services in Motihari?",
+        "a": "Yes, BDDN includes a professionally designed logo free of charge with all of our multi-page website packages."
+      }
+    ]
+  },
+  {
+    "name": "Bettiah",
+    "slug": "bettiah",
+    "lat": 26.8029,
+    "lng": 84.5168,
+    "postalCode": "845438",
+    "introduction": "Bettiah, the historic headquarter of West Champaran, is home to handloom cooperatives, educational academies, clinics, and agricultural distributors. Connect with digital buyers by launching your website. BDDN provides affordable website development in Bettiah, creating mobile-friendly web pages that showcase your local pride and service reliability.",
+    "useCases": [
+      {
+        "icon": "🧶",
+        "title": "Handloom & Textile Collectives",
+        "desc": "Promote Bettiah's traditional garments, bedsheets, and handloom fabrics to regional and state buyers."
+      },
+      {
+        "icon": "🏫",
+        "title": "Schools & Training Institutes",
+        "desc": "Keep parents updated with academic notice boards, syllabus downloads, exam schedules, and admissions."
+      },
+      {
+        "icon": "🏥",
+        "title": "Maternity & Pediatric Clinics",
+        "desc": "Manage patient appointments, share health guidelines, and publish clinic hours for West Champaran residents."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can a local handloom dealer in Bettiah go online?",
+        "a": "We can build a beautiful catalog website for ₹2,999, or an e-commerce store with checkout for ₹14,999 to showcase your fabrics."
+      },
+      {
+        "q": "What is the starting website development cost in Bettiah?",
+        "a": "Our basic landing pages start at ₹699, multi-page business websites at ₹2,999, and full e-commerce stores at ₹14,999."
+      },
+      {
+        "q": "Do you provide technical support in Bettiah?",
+        "a": "Yes! All website packages come with 1 year of free WhatsApp technical support to assist you with updates and modifications."
+      }
+    ]
+  },
+  {
+    "name": "Hajipur",
+    "slug": "hajipur",
+    "lat": 25.6858,
+    "lng": 85.2126,
+    "postalCode": "844101",
+    "introduction": "Hajipur, situated near Patna and famous for its bananas and industrial area, is a critical logistics, warehousing, and trade hub. Industrial factories, warehousing operators, banana distributors, and clinics in Hajipur need online platforms to acquire corporate clients. BDDN offers specialized website development in Hajipur to power your business growth.",
+    "useCases": [
+      {
+        "icon": "🏬",
+        "title": "Industrial Warehouses & Logistics",
+        "desc": "List storage space sizes, cold chain capacities, handling equipment, and accept corporate logistics deals in Hajipur."
+      },
+      {
+        "icon": "🍌",
+        "title": "Agri-Exporters & Banana Traders",
+        "desc": "Establish international trade links by showcasing fruit packaging standards, supply capacity, and certifications."
+      },
+      {
+        "icon": "🏥",
+        "title": "Multispeciality Clinics & Labs",
+        "desc": "Let local patients book appointment slots, read health articles, and locate your clinic on Google Maps."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why does a Hajipur industrial firm need a website?",
+        "a": "A professional website highlights your industrial capacity, client base, and quality standards, making it easier to close corporate logistic contracts."
+      },
+      {
+        "q": "What is the cost of website development in Hajipur?",
+        "a": "Landing pages start at ₹699, multi-page company profiles cost ₹2,999, and transactional online stores cost ₹14,999."
+      },
+      {
+        "q": "Will our website look good on mobile phones in Hajipur?",
+        "a": "Yes, every website BDDN creates is designed mobile-first, ensuring smooth loading and navigation on all smartphones."
+      }
+    ]
+  },
+  {
+    "name": "Siwan",
+    "slug": "siwan",
+    "lat": 26.2243,
+    "lng": 84.3592,
+    "postalCode": "841226",
+    "introduction": "Siwan, known for its vibrant remittance economy and high purchasing power, is seeing growth in construction, luxury retail, private clinics, and schools. A premium website helps local brands capture this prosperous market. BDDN delivers premium website development in Siwan to position your business for elite local success.",
+    "useCases": [
+      {
+        "icon": "🧱",
+        "title": "Cement, Steel & Hardware Showrooms",
+        "desc": "List top hardware brands, supply ranges, custom building items, and generate home construction material leads."
+      },
+      {
+        "icon": "🏫",
+        "title": "Private CBSE-Affiliated Schools",
+        "desc": "Provide parent portals, academic calendars, online admission forms, fee structures, and notice updates."
+      },
+      {
+        "icon": "🏥",
+        "title": "Eye & Dental Specialist Clinics",
+        "desc": "Allow patients to book consults, see doctor profiles, view diagnostic tools, and contact reception."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How does a website help a business in Siwan?",
+        "a": "With high regional purchasing power, a website helps hardware suppliers, schools, and clinics in Siwan stand out as premium, trustworthy choices."
+      },
+      {
+        "q": "What is the price of static website design in Siwan?",
+        "a": "A standard multi-page static website costs ₹2,999, which includes a free domain name registration for the first year."
+      },
+      {
+        "q": "Can you add a WhatsApp chat option to my Siwan website?",
+        "a": "Yes, we integrate WhatsApp float buttons on all sites, making it easy for customers to chat with you directly."
+      }
+    ]
+  },
+  {
+    "name": "Gopalganj",
+    "slug": "gopalganj",
+    "lat": 26.4682,
+    "lng": 84.4419,
+    "postalCode": "841428",
+    "introduction": "Gopalganj, a prominent agricultural zone known for sugarcane cultivation and local trading, is developing its clinics, educational coachings, and commodity trade. A website is the perfect bridge to expand your local footprint. BDDN provides affordable website development in Gopalganj, helping local businesses build digital channels to capture more inquiries.",
+    "useCases": [
+      {
+        "icon": "🌾",
+        "title": "Agri-Processing & Sugar Mandis",
+        "desc": "Showcase your processing units, grain products, daily wholesale prices, and handle bulk supply orders."
+      },
+      {
+        "icon": "🎓",
+        "title": "Competitive Exam Coachings",
+        "desc": "Publish notice boards, details of coaching courses, topper photos, contact info, and registration forms."
+      },
+      {
+        "icon": "🏥",
+        "title": "General Medicine Clinics & Labs",
+        "desc": "Help Gopalganj residents locate your lab, view diagnostic test packages, and book online consultation bookings."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the starting website development cost in Gopalganj?",
+        "a": "Landing pages start at ₹699, multi-page business websites at ₹2,999, and full e-commerce stores at ₹14,999."
+      },
+      {
+        "q": "Can you design a website for my coaching center in Gopalganj?",
+        "a": "Yes! We specialize in coaching sites starting at ₹2,999, setting up notice boards, contact forms, and student galleries in 7 days."
+      },
+      {
+        "q": "Is the website domain free of charge in Gopalganj?",
+        "a": "Yes, our ₹2,999 Static and ₹14,999 E-Commerce packages include 1 year of free domain name registration."
+      }
+    ]
+  }
+]
