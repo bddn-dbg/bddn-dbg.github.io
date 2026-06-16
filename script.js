@@ -273,15 +273,18 @@ if (legalSections.length && tocItems.length) {
             if (window.innerWidth >= 992) {
               const sidebar = document.querySelector('.legal-sidebar');
               if (sidebar) {
-                const sidebarRect = sidebar.getBoundingClientRect();
-                const itemRect = item.getBoundingClientRect();
-                if (itemRect.top < sidebarRect.top || itemRect.bottom > sidebarRect.bottom) {
-                  const relativeTop = itemRect.top - sidebarRect.top + sidebar.scrollTop;
-                  sidebar.scrollTo({
-                    top: relativeTop - sidebar.clientHeight / 2 + itemRect.height / 2,
-                    behavior: 'smooth'
-                  });
-                }
+                // Defer geometry measurement to next animation frame to prevent forced reflow / layout thrashing
+                requestAnimationFrame(() => {
+                  const sidebarRect = sidebar.getBoundingClientRect();
+                  const itemRect = item.getBoundingClientRect();
+                  if (itemRect.top < sidebarRect.top || itemRect.bottom > sidebarRect.bottom) {
+                    const relativeTop = itemRect.top - sidebarRect.top + sidebar.scrollTop;
+                    sidebar.scrollTo({
+                      top: relativeTop - sidebar.clientHeight / 2 + itemRect.height / 2,
+                      behavior: 'smooth'
+                    });
+                  }
+                });
               }
             }
           } else {
