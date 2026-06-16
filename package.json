@@ -1,0 +1,15 @@
+{
+  "name": "bddn-dbg.github.io",
+  "version": "1.0.0",
+  "description": "Bihar Digital Data & Network (BDDN) website",
+  "scripts": {
+    "dev": "vite",
+    "generate-seo": "node generate-local-seo.js",
+    "build": "node generate-local-seo.js && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.61.1",
+    "vite": "^5.2.11"
+  }
+}
